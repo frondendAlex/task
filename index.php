@@ -8,11 +8,22 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="section-header">
         <div class="container">
-            
+            <div class="header">
+                <div class="header__top"></div>
+                <div class="header__bottom"></div>
+            </div>
         </div>
     </header>
+
+    <section class="section-one">
+        <div class="container">
+            <div class="section__header">
+                <h1 class="section__title">Отчет</h1>
+            </div>
+        </div>
+    </section>
 
     <script src="js/main.js"></script>
 </body>
