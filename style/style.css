@@ -41,7 +41,6 @@ input::placeholder,textarea::placeholder {color: inherit;}
 /* ** select ** */
 select {-webkit-appearance: none;-moz-appearance: none;appearance: none;cursor: pointer;border: none;display: inline-block;}
 /* // select // */
-
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -54,18 +53,94 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 32px;
 }
-
-
-
-.section-header {
+.section-content {
+    padding: 40px 0;
+}
+.header {
     height: 50px;
-    background: rgb(34,193,195);
-    background: linear-gradient(285deg, rgba(34,193,195,1) 0%, rgba(85,189,101,1) 0%, rgba(121,173,188,1) 0%, rgba(121,141,188,1) 47%);
+    background: #4877A3;
+    background: linear-gradient(0deg, #4877A3, #D559C5);
+}
+.section__header {
+    text-align: center;
+}
+.content {
+    margin: 30px 0 0 0;
+}
+.content__wrap {
+    display: grid;
+    gap: 20px;
+}
+.content__col {
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.content__item {
+    display: flex;
+}
+.content__title {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-right: 1px solid #bababa;
+}
+.content__title h2 {
+    font-size: 18px;
+}
+.content__link {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+.content__link a {
+    font-size: 14px;
+}
+.content__link a:hover {
+    text-decoration: underline;
+}
+.content__number {
+    font-size: 14px;
+    padding: 10px;
+    border-right: 1px solid #bababa;
+}
+.content__count {
+    width: 100%;
+    max-width: 82px;
+    padding: 10px;
+    border-left: 1px solid #bababa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__count-number {
+    font-size: 14px;
+}
+
+.content__total {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 5px 0 0;
+}
+.content__total span {
+    margin: 0 0 0 10px;
+}
+
+
+
+
+
+
+
+.footer {
+    height: 50px;
+    background: #88b3db;
+    background: linear-gradient(0deg, #56a348, #6e59d5);
 }
