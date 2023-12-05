@@ -164,16 +164,90 @@ body {
 
 
 .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 55;
+    transform: translateY(-30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .3s linear, opacity .4s linear;
+}
+.modal.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 .modal__wrap {
-    
     background-color: #fff;
+    border-radius: 12px;
+    position: relative;
 }
 .modal__wrap.modal__signin-wrap {
+    width: 100%;
     max-width: 500px;
+    box-shadow:  0px 0px 32px -2px rgba(245, 245, 245, 1);
+}
+.modal__header {
+    border-bottom: 1px solid #000;
+    padding: 20px;
+}
+.modal__header-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.modal__body {
+    padding: 20px;
+}
+.modal__signin-field {
+
+}
+.modal__signin-field {
+    margin: 0 0 20px 0;
+}
+.modal__signin-field-text {
+    display: inline-block;
+    margin: 0 0 6px 0;
+}
+.modal__signin-field-input {
+    width: 100%;
+    height: 34px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 0 8px;
+}
+.modal__signin-field-error {
+    font-size: 12px;
+    color: #bf4747;
+}
+.modal__signin-btn {
+    color: #fff;
+    font-size: 16px;
+    background-color: #4877A3;
+    border-radius: 6px;
+    padding: 5px 20px;
+}
+
+
+
+
+
+.overlow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 50;
+}
+.overlow.active {
+    display: block;
 }

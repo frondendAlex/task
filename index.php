@@ -87,12 +87,30 @@
             </div>
             <div class="modal__body">
                 <form class="modal__signin-form" action="" method="POST">
-
+                    <div class="modal__signin-field">
+                        <label class="modal__signin-field-label">
+                            <span class="modal__signin-field-text">Имя</span>
+                            <input class="modal__signin-field-input" autocomplete="off" type="text" name="name">
+                            <span class="modal__signin-field-error">Не правальное имя</span>
+                        </label>
+                    </div>
+                    <div class="modal__signin-field">
+                        <label class="modal__signin-field-label">
+                            <span class="modal__signin-field-text">Пароль</span>
+                            <input class="modal__signin-field-input" type="password" name="password">
+                            <span class="modal__signin-field-error">Не правальный пароль</span>
+                        </label>
+                    </div>
+                    <button class="modal__signin-btn" type="submit">Войти</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- >>> END modal <<< -->
+
+    <!-- >>> BEGIN overlow <<< -->
+    <div class="overlow"></div>
+    <!-- >>> END overlow <<< -->
 
     <script src="js/main.js"></script>
 </body>
