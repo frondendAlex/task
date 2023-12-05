@@ -11,8 +11,11 @@
     <header class="header">
         <div class="container">
             <div class="header">
-                <div class="header__top"></div>
-                <div class="header__bottom"></div>
+                <div class="header__top">
+                    <button class="header__top-btn" type="button" aria-label="Открыть модальное окно">
+                        <span>Войти</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -74,6 +77,22 @@
     <footer class="footer">
         
     </footer>
+
+    <!-- >>> BEGIN modal <<< -->
+    <div class="modal modal__signin">
+        <div class="modal__wrap modal__signin-wrap">
+            <div class="modal__header">
+                <button class="modal__header-close" type="button" aria-label="Закрыть модальное окно">Закрыть</button>
+                <h2 class="modal__header-title">Войти в систему</h2>
+            </div>
+            <div class="modal__body">
+                <form class="modal__signin-form" action="" method="POST">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- >>> END modal <<< -->
 
     <script src="js/main.js"></script>
 </body>
