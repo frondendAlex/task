@@ -13,7 +13,7 @@
             <div class="header">
                 <div class="header__top">
                     <button class="header__top-btn" type="button" aria-label="Открыть модальное окно">
-                        <span>Войти</span>
+                        <span>Добавить запись</span>
                     </button>
                 </div>
             </div>
@@ -25,51 +25,45 @@
             <div class="section__header">
                 <h1 class="section__title">Отчет</h1>
             </div>
-            <div class="content">
-                <div class="content__wrap">
 
-                    <div class="content__col">
-                        <div class="content__item">
-                            <div class="content__number">
-                                <span>№1</span>
-                            </div>
-                            <div class="content__title">
-                                <h2>Отчет1</h2>
-                            </div>
-                            <div class="content__link">
-                                <a href="">http://192.168.1.99/demo8/dist/apps/user-management/users/list.html</a>
-                            </div>
-                            <div class="content__count">
-                                <span class="content__count-text">Кол-во:</span>
-                                <span class="content__count-number">1</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="content__col">
-                        <div class="content__item">
-                            <div class="content__number">
-                                <span>№2</span>
-                            </div>
-                            <div class="content__title">
-                                <h2>Отчет2</h2>
-                            </div>
-                            <div class="content__link">
-                                <a href="">Ссылка2</a>
-                            </div>
-                            <div class="content__count">
-                                <span class="content__count-text">Кол-во:</span>
-                                <span class="content__count-number">3</span>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="tabs">
+                <div class="tabs__item tabs--active" data-tabs="1">
+                    <button type="button" class="tabs__btn">
+                        <span>Сайт</span>
+                    </button>
                 </div>
-
-                <div class="content__total">
-                    Итого: <span>4</span>
+                <div class="tabs__item" data-tabs="2">
+                    <button type="button" class="tabs__btn">
+                        <span>Метроник</span>
+                    </button>
                 </div>
             </div>
+
+            <div class="content">
+                <div class="content__item content--active" data-content="1">
+                    <div class="content__col">
+                        <div class="content__col-number content__col-border">№<span>1</span></div>
+                        <div class="content__col-check content__col-border">
+                            <input type="checkbox">
+                        </div>
+                        <div class="content__col-desc content__col-border">Описание 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quaerat ad natus explicabo ex velit rerum deleniti voluptatem consequatur beatae.</div>
+                        <div class="content__col-link content__col-border"><a href="">Ссылка 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae molestias enim velit quia quae maiores suscipit iste accusantium illo.</a></div>
+                        <div class="content__col-edit content__col-border"><a href="">Редактировать</a></div>
+                    </div>
+
+                    <div class="content__col">
+                        <div class="content__col-number content__col-border">№<span>2</span></div>
+                        <div class="content__col-check content__col-border">
+                            <input type="checkbox">
+                        </div>
+                        <div class="content__col-desc content__col-border">Описание 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quaerat ad natus explicabo ex velit rerum deleniti voluptatem consequatur beatae.</div>
+                        <div class="content__col-link content__col-border"><a href="">http://127.0.0.1/openserver/phpmyadmin/index.php?route=/sql&db=report&table=website&pos=0</a></div>
+                        <div class="content__col-edit content__col-border"><a href="">Редактировать</a></div>
+                    </div>
+                </div>
+                <div class="content__item" data-content="2">Контент 2</div>
+            </div>
+
         </div>
     </section>
 
@@ -83,7 +77,7 @@
         <div class="modal__wrap modal__signin-wrap">
             <div class="modal__header">
                 <button class="modal__header-close" type="button" aria-label="Закрыть модальное окно">Закрыть</button>
-                <h2 class="modal__header-title">Войти в систему</h2>
+                <h2 class="modal__header-title">Новая запись</h2>
             </div>
             <div class="modal__body">
                 <form class="modal__signin-form" action="" method="POST">
