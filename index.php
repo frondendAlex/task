@@ -43,6 +43,7 @@
             <h1>Коммит 1</h1>
             <h1>Создана ветка test1</h1>
             <p>Переместил из ветки test1 в test</p>
+            <p>Еще одна ветка</p>
 
             <div class="content">
                 <div class="content__item content--active" data-content="1">
