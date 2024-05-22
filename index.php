@@ -39,6 +39,8 @@
                 </div>
             </div>
 
+            <h1>Создана ветка test</h1>
+
             <div class="content">
                 <div class="content__item content--active" data-content="1">
                     <div class="content__col">
